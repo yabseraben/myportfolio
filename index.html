@@ -208,35 +208,6 @@ var typed = new Typed('#typed-text', {
     });
 </script>
 
-<!-- JavaScript to create sparkles -->
-    <script>
-        function getRandomHorizontalOffset(max) {
-            return Math.floor(Math.random() * max) - max / 2;
-        }
-
-        document.addEventListener('mousemove', function(e) {
-            var sparkle = document.createElement('div');
-            sparkle.className = 'sparkle';
-
-            var offsetX = getRandomHorizontalOffset(30); // Max offset in pixels horizontally
-
-            sparkle.style.left = (e.pageX + offsetX) + 'px';
-            sparkle.style.top = e.pageY + 'px';
-
-            document.body.appendChild(sparkle);
-
-            setTimeout(function() {
-                sparkle.style.opacity = '1';
-                setTimeout(function() {
-                    sparkle.style.opacity = '0';
-                    setTimeout(function() {
-                        document.body.removeChild(sparkle);
-                    }, 1000); // Adjusted removal time for a longer-lasting trail
-                }, 200); // Adjusted opacity transition time
-            }, 0);
-        });
-    </script>
-
 
 </body>
 </html>
