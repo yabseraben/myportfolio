@@ -35,6 +35,7 @@ body {
     background-image: linear-gradient(80deg, black, black); /* Updated colors */
     overflow: auto;
     font-family: 'poppins';
+    background-color: black;
 }
 
 #up, #down, #left, #right {
