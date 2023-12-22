@@ -28,6 +28,9 @@
             <a href="index.html">
             <li>HOME</li>
         </a>
+        <a href="why.html">
+            <li>WHY DISNEY?</li>
+        </a>
               <a href="leadership.html">
             <li>INVOLVEMENT</li>
         </a>
@@ -52,10 +55,10 @@
 <div class="two-column-layout">
   <div class="column" id="column1">
     <h2>Agenda</h2>
-    <p id="item1" data-content="Content for Item 1">Why Disney?</p>
-    <p id="item2" data-content="Content for Item 2">Why the position</p>
-    <p id="item3" data-content="Content for Item 3">What I will contribute</p>
-    
+    <p id="item1" data-content="Content for Item 1">I Love Stories</p>
+    <p id="item2" data-content="Content for Item 2">Environmental Commitment</p>
+    <p id="item3" data-content="Content for Item 3">Representation for All</p>
+     <p id="item4" data-content="Content for Item 3">What I Will Contribute</p>
     <!-- Add more items as needed -->
   </div>
   <div class="column" id="column2">
@@ -112,7 +115,7 @@
             case 'item1':
                 contentHtml = `
                              <div id="item2-content">
-                        <h2>Why Disney?</h2>
+                        <h2>I Love Stories</h2>
                         <div id="slides-container">
                             <div class="slide">
                              <img id="castle" src="castle.jpeg" alt="Description of first image for item 2">
@@ -134,7 +137,7 @@
                                 <p>From a young age, I have been captivated by Disney's imaginative worlds, which have not only brought joy and wonder into my life but also shaped my understanding of creativity and innovation. This creativity resonates deeper with Disney’s dedication to inclusive worlds and authentic stories. This extends to the workforce, content, and community outreach which ensures that stories are accessible to all communities and resonate with people from diverse backgrounds. <br> <br> It would be an amazing opportunity to be part of an organization that not only aligns with my professional goals but also resonates with my personal values and interests! </p>
                             </div>
                         </div>
-                        <img src="next.png" alt="Next" id="next-slide" class="slideshow-button">
+                        <img src="tikur.png" alt="Next" id="next-slide" class="slideshow-button">
                         <!-- Add previous button if needed -->
                     </div>
                 `;
@@ -142,16 +145,29 @@
             case 'item2':
                 contentHtml = `
                     <div class="item3-content">
-                        <h2>Item 3 Title</h2>
-                        <p>Item 3 description...</p>
-                        <img src="image3-1.png" alt="First image for item 3">
-                        <img src="image3-2.png" alt="Second image for item 3">
+                            <h2>Environmental commitment</h2>
+                              <img class="environment" src="emission.png" alt="Description of second image for item 2">
+                              <img class="environment" src="water.png" alt="Description of second image for item 2">
+                              <img class="environment" src="waste.png" alt="Description of second image for item 2">
+                              <img class="environment" src="materials.png" alt="Description of second image for item 2">
+                              <img class="environment" src="design.png" alt="Description of second image for item 2">
+
+                                <p>I am also drawn to Disney’s dedication to sustainability and ethical practices, which are not just corporate responsibilities but core elements of its business strategy. <br> <br> Disney’s proactive approach outlined in the 2030 Environmental Goals focuses on reducing emissions, water stewardship, and waste management, reflecting a forward-thinking commitment to a sustainable future, a vision that I have supported throughout my life. I appreciate the approach to water conservation with plans to implement localized watershed strategies and source sustainable seafood. It reflects my mindset of sustainability, in my cooking, in my purchasing, and even in my creativity!</p>
                     </div>
 
 
                 `;
                 break;
             case 'item3':
+                contentHtml = `
+                   <div class="item3-content">
+                    <h2>Representation Values</h2>
+                              <img id="spiderman" src="spiderman.jpg" alt="Description of second image for item 2">
+                                <p>From a young age, I have been captivated by Disney's imaginative worlds, which have not only brought joy and wonder into my life but also shaped my understanding of creativity and innovation. This creativity resonates deeper with Disney’s dedication to inclusive worlds and authentic stories. This extends to the workforce, content, and community outreach which ensures that stories are accessible to all communities and resonate with people from diverse backgrounds. <br> <br> It would be an amazing opportunity to be part of an organization that not only aligns with my professional goals but also resonates with my personal values and interests! </p>
+                            </div>
+                `;
+                break;
+            case 'item4':
                 contentHtml = `
                     <div class="item6-content">
                         <h2>What I will contribute</h2>
@@ -179,11 +195,6 @@
                         <li>I emphasize fostering strong, genuine relationships within teams and respecting diverse perspectives to create an inclusive environment </li>
                         </div>
                     </div>
-                `;
-                break;
-            case 'item4':
-                contentHtml = `
-                    
                 `;
                 break;
             case 'item5':

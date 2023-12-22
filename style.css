@@ -32,6 +32,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    background-image: linear-gradient(80deg, black, black); /* Updated colors */
     overflow: auto;
     font-family: 'poppins';
     background-color: black;
@@ -46,7 +47,7 @@ body {
 #up {
     height: 800px;
     width: 800px;
-    background-image: linear-gradient(80deg, #746bab, black);
+    background-image: linear-gradient(80deg, #0ABAB5, black);
     animation: down 40s infinite;
 }
 
@@ -541,6 +542,8 @@ nav {
     flex: 0 0 100%; /* Don't allow the header to grow or shrink */
 }
 
+
+
 .slide p {
     font-family: 'TT Norms Pro', sans-serif;
     font-size: 20px;
@@ -559,6 +562,13 @@ nav {
 /* Display the first slide by default */
 #slides-container .slide:first-child {
     display: block;
+}
+
+.item3-content p{
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 20;
+    color: white;
 }
 
 /* Styling for the slideshow buttons */
@@ -673,7 +683,9 @@ nav {
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 150px;
+    padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 340px;
 }
 
 .item4-content h2 {
@@ -699,6 +711,46 @@ nav {
 }
 
 .item4-content p {
+    order: 2; /* The paragraph will follow after the image */
+    font-size: 20px;
+    font-weight: 20;
+    width: 100%; /* Ensures paragraph takes full width */
+    margin-bottom: 30px;
+}
+
+.item4-content2 {
+    font-family: 'TT Norms Pro', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+      padding-right: 150px;
+ margin-top: 160px;
+}
+
+.item4-content2 h2 {
+    font-size: 45px; /* Adjust size as needed */
+    border-bottom: solid 1px white;
+    padding-bottom: 40px;
+    font-weight: 450;
+     margin-top: -5px;
+    margin-bottom: 10px
+    flex: 0 0 100%; /* Don't allow the header to grow or shrink */
+}
+
+.item4-content2 h3 {
+    font-size: 30px; /* Adjust size as needed */
+    font-weight: normal;
+     margin-top: 60px;
+}
+
+.item4-content2 h4 {
+    font-size: 16.5px; /* Adjust size as needed */
+    font-weight: 80;
+    margin: 4px;
+}
+
+.item4-content2 p {
     order: 2; /* The paragraph will follow after the image */
     font-size: 20px;
     font-weight: 20;
@@ -908,7 +960,9 @@ nav {
     width: 100%;
     background-color: black;
     padding-bottom: 20px;
-
+    color: white;
+font-family: 'TT Norms Pro', sans-serif;
+text-align:center ;
 }
 
 
@@ -924,6 +978,10 @@ nav {
     margin: 20px 0;
     flex-wrap: wrap; /* Add wrap to handle responsiveness */
 
+}
+
+#promo{
+    margin-top: -100px;
 }
 
 
