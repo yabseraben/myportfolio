@@ -12,6 +12,12 @@
     <script src="https://kit.fontawesome.com/ba57058827.js" crossorigin="anonymous"></script>
     <title>Yabsera Benyam</title>
     <link rel="icon" href="tab.png" type="image/png">
+    <style>
+        #huh img{
+            height: auto;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
     <div class="animated-gradient">
@@ -20,7 +26,7 @@
         <section id="left"></section>
         <section id="right"></section>
     </div>
-    <nav>
+     <nav>
          <a href="index.html">
         <div class="logo"> <img src="logo.png"></div>
     </a>
@@ -42,15 +48,32 @@
 
     <section id="details">
         <div>
-            <span>Hey, I'm Yabsera </span> <br>
+            <span>Hey, I'm Yabsera<br>
             <span>I'm a </span>
             <span id="typed-text"></span>
             <p> Communication and Data Science @ USC <p>
         </div>
     </section>
 
-                    <div class="item4-content">
-                     <h2>My Internship Experiences</h2>
+          
+
+
+                    <div class="item4-content2">
+                     <h2>My Experiences</h2>
+
+                     <div class="stuff2">
+                            <img src="doozy.png" alt="First image for item 4">
+                            <div class="text-content2">
+                                <p>2022 - 2023 </p>
+                                 <a href="tiffany.html">
+                                <img src="next.png" alt="Next" id="yes" class="slideshow-button">
+                                </a>
+                                <h4>VICE PRESIDENT OF COMMUNICATIONS</h4>
+                                <h3>Delta Omicron Zeta Club</h3>
+                                <h5>Creating and managing the organization’s website, social media, and recruitment to market and bolster member accessibility</h5>
+                            </div>
+                        </div>
+
                         <div class="stuff2">
                             <img src="uscinfo.jpeg" alt="First image for item 4">
                             <div class="text-content2">
@@ -105,6 +128,9 @@
                         </div>
 
                     </div>
+
+        
+
         
 
 
@@ -207,6 +233,35 @@ var typed = new Typed('#typed-text', {
         }
     });
 </script>
+
+<!-- JavaScript to create sparkles -->
+    <script>
+        function getRandomHorizontalOffset(max) {
+            return Math.floor(Math.random() * max) - max / 2;
+        }
+
+        document.addEventListener('mousemove', function(e) {
+            var sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+
+            var offsetX = getRandomHorizontalOffset(30); // Max offset in pixels horizontally
+
+            sparkle.style.left = (e.pageX + offsetX) + 'px';
+            sparkle.style.top = e.pageY + 'px';
+
+            document.body.appendChild(sparkle);
+
+            setTimeout(function() {
+                sparkle.style.opacity = '1';
+                setTimeout(function() {
+                    sparkle.style.opacity = '0';
+                    setTimeout(function() {
+                        document.body.removeChild(sparkle);
+                    }, 1000); // Adjusted removal time for a longer-lasting trail
+                }, 200); // Adjusted opacity transition time
+            }, 0);
+        });
+    </script>
 
 
 </body>
